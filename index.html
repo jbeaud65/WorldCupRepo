@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>World Cup Scores</title>
+        <link rel="stylesheet" href="myStyles.css"> <!--linking the css (myStyles) to index.html (must be done in head)-->
+    </head>
+    <body>
+        <div>
+            <nav> <!-- navgation menu-->
+                <ul>
+                    <li><a href="index.html">Scores by Round</a></li> <!--li is list item-->
+                    <li><a href="Standings.html">Group Stage Standings</a></li> <!-- a href is a hyperlink with the associated url-->
+                </ul> 
+            </nav>
+            <p id="myHeader">
+                Below are all the scores from the world cup games that have been played thus far.
+                Click the question mark icon on the right to see more information from the game.
+            </p>
+        </div>
+        <div id="wg-api-football-fixtures"
+            data-host="v3.football.api-sports.io"
+            data-refresh="0"
+            data-key="d0e1a1b737f2eaca189b40ee9879402c"
+            data-theme=""
+            data-league="1"
+            data-season="2022"
+            data-show-errors="false"
+            class="api_football_loader">
+        </div>
+        <script
+            type="module"
+            src="https://widgets.api-sports.io/football/1.1.8/widget.js">
+        </script>
+    </body>
+</html>
