@@ -87,10 +87,3 @@ body {
 #rankings tr:nth-child(even){
     background: repeating-linear-gradient(rgb(240, 114, 114), rgb(246, 70, 70)) ;
 }
-
-
-
-/* tr:hover {
-    background-color: #ddd;
-} */
-
