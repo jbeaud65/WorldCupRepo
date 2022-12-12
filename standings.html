@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>World Cup Scores</title>
+        <link rel="stylesheet" href="myStyles.css">
+    </head>
+    <body>
+        <div class = "topnav">
+            <a href="index.html">Home</a></li>
+            <a href="scores.html">Scores by Round</a></li>
+            <a class="active" href="standings.html">Group Stage Standings</a></li>
+            <a href="bracket.html">Knockout Round Bracket</a>
+        </div>
+
+        <p id="myHeader">
+                Below are the standings from the World Cup Groups.  The top two teams from each group 
+                have advanced to the knockout stage and can be seen in the bracket.
+        </p>
+
+        <div id="wg-api-football-standings"
+            data-host="v3.football.api-sports.io"
+            data-refresh="0"
+            data-key="d0e1a1b737f2eaca189b40ee9879402c"
+            data-theme=""
+            data-league="1"
+            data-season="2022"
+            data-show-errors="false"
+            class="wg_loader">
+        </div>
+        <script
+            type="module"
+            src="https://widgets.api-sports.io/2.0.3/widgets.js">
+        </script>
+    </body>
+</html>

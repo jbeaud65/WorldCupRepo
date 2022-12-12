@@ -1,12 +1,96 @@
 #myHeader {
-    background-color: green;
+    background: linear-gradient(#be3144, rgb(133, 32, 32));
     color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 100%;
     padding: 40px;
     text-align: center;
 }
+li {
+    list-style-type: none; /*This takes away the bullet points of the lists*/
+}
 
 body {
-    background-color: tan;
+    background: #fff;;
 }
+
+.topnav {
+    overflow: hidden;
+    background: #3a4750;
+}
+  
+.topnav a {
+    text-align: center;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 100%;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.topnav a.active {
+    background: linear-gradient( #be3144, rgb(133, 32, 32));
+    color: white;
+}
+
+#WCLogo {
+    margin-top: 0.5in;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#bracket {
+    margin-top: 0.5in;
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.flags {
+    width: 30px;
+    vertical-align: middle;
+}
+
+#rankings caption{
+    font-weight: bolder;
+    font-size: larger;
+    margin-bottom: 0.2in;
+    color: black;
+    border-collapse: collapse;
+    border-color: #333;
+}
+
+#rankings {
+    margin-top: 0.5in;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 70%;
+    padding-top: 50px;
+    padding-bottom: 12px;
+    text-align: center;
+    background: rgb(231, 148, 148);
+    color: black;
+}
+
+#rankings th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#rankings tr:nth-child(even){
+    background: repeating-linear-gradient(rgb(240, 114, 114), rgb(246, 70, 70)) ;
+}
+
+
+
+/* tr:hover {
+    background-color: #ddd;
+} */
+

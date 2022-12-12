@@ -7,31 +7,278 @@
         <link rel="stylesheet" href="myStyles.css"> <!--linking the css (myStyles) to index.html (must be done in head)-->
     </head>
     <body>
-        <div>
-            <nav> <!-- navgation menu-->
-                <ul>
-                    <li><a href="index.html">Scores by Round</a></li> <!--li is list item-->
-                    <li><a href="Standings.html">Group Stage Standings</a></li> <!-- a href is a hyperlink with the associated url-->
-                </ul> 
-            </nav>
-            <p id="myHeader">
-                Below are all the scores from the world cup games that have been played thus far.
-                Click the question mark icon on the right to see more information from the game.
-            </p>
+        <div class = "topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="scores.html">Scores by Round</a>
+            <a href="standings.html">Group Stage Standings</a>
+            <a href="bracket.html">Knockout Round Bracket</a> 
         </div>
-        <div id="wg-api-football-fixtures"
-            data-host="v3.football.api-sports.io"
-            data-refresh="0"
-            data-key="d0e1a1b737f2eaca189b40ee9879402c"
-            data-theme=""
-            data-league="1"
-            data-season="2022"
-            data-show-errors="false"
-            class="api_football_loader">
-        </div>
-        <script
-            type="module"
-            src="https://widgets.api-sports.io/football/1.1.8/widget.js">
-        </script>
+
+        <img id="WCLogo" src = "RedWC_logo.jpg">
+
+        <table id="rankings">
+            <caption> FIFA World Rankings for World Cup Teams</caption>
+            <tr>
+                <th>Ranking</th>
+                <th>Country</th>
+                <th>Flag</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th > <li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/brazil/squad" >
+                    Brazil</a></li> </th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Brazil.png>
+                </th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/belgium/squad" >
+                    Belgium</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Belgium.png>
+                </th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/argentina/squad" >
+                    Argentina</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Argentina.png>
+                </th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/france/squad" >
+                    France</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-France.png>
+                </th>
+            </tr>
+            <tr>
+                <th>5</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/england/squad" >
+                    England</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-United-Kingdom.png>
+                </th>
+            </tr>
+            <tr>
+                <th>7</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/spain/squad" >
+                    Spain</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Spain.png>
+                </th>
+            </tr>
+            <tr>
+                <th>8</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/netherlands/squad" >
+                    Netherlands</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Netherlands.png>
+                </th>
+            </tr>
+            <tr>
+                <th>9</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/portugal/squad" >
+                    Portugal</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Portugal.png>
+                </th>
+            </tr>
+            <tr>
+                <th>10</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/denmark/squad" >
+                    Denmark</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Denmark.png>
+                </th>
+            </tr>
+            <tr>
+                <th>11</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/germany/squad" >
+                    Germany</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Germany.png>
+                </th>
+            </tr>
+            <tr>
+                <th>12</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/croatia/squad" >
+                    Croatia</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Croatia.png>
+                </th>
+            </tr>
+            <tr>
+                <th>13</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/mexico/squad" >
+                    Mexico</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Mexico.png>
+                </th>
+            </tr>
+            <tr>
+                <th>14</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/uruguay/squad" >
+                    Uruguay</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Uruguay.png>
+                </th>
+            </tr>
+            <tr>
+                <th>15</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/switzerland/squad" >
+                    Switzerland</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Switzerland.png>
+                </th>
+            </tr>
+            <tr>
+                <th>16</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/united-states/squad" >
+                    USA</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-United-States-of-America.png>
+                </th>
+            </tr>
+            <tr>
+                <th>18</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/senegal/squad" >
+                    Senegal</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Senegal.png>
+                </th>
+            </tr>
+            <tr>
+                <th>19</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/wales/squad" >
+                    Wales</a></li></th>
+                <th>
+                    <img class="flags" src = https://png.pngtree.com/png-clipart/20210606/original/pngtree-wales-flag-folded-png-image_6387752.jpg>
+                </th>
+            </tr>
+            <tr>
+                <th>20</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/iran/squad" >
+                    Iran</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Iran.png>
+                </th>
+            </tr>
+            <tr>
+                <th>21</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/serbia/squad" >
+                    Serbia</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Serbia.png>
+                </th>
+            </tr>
+            <tr>
+                <th>22</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/morocco/squad" >
+                    Morocco</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Morocco.png>
+                </th>
+            </tr>
+            <tr>
+                <th>24</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/japan/squad" >
+                    Japan</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Japan.png>
+                </th>
+            </tr>
+            <tr>
+                <th>26</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/poland/squad" >
+                    Poland</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Poland.png>
+                </th>
+            </tr>
+            <tr>
+                <th>28</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/korea-republic/squad" >
+                    Korea Republic</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Korea-South.png>
+                </th>
+            </tr>
+            <tr>
+                <th>30</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/tunisia/squad" >
+                    Tunisia</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Tunisia.png>
+                </th>
+            </tr>
+            <tr>
+                <th>31</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/costa-rica/squad" >
+                    Costa Rica</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Costa-Rica.png>
+                </th>
+            </tr>
+            <tr>
+                <th>38</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/australia/squad" >
+                    Australia</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Australia.png>
+                </th>
+            </tr>
+            <tr>
+                <th>41</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/canada/squad" >
+                    Canada</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Canada.png>
+                </th>
+            </tr>
+            <tr>
+                <th>43</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/cameroon/squad" >
+                    Cameroon</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Cameroon.png>
+                </th>
+            </tr>
+            <tr>
+                <th>44</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/equador/squad" >
+                    Ecuador</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Ecuador.png>
+                </th>
+            </tr>
+            <tr>
+                <th>50</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/qatar/squad" >
+                    Qatar</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Qatar.png>
+                </th>
+            </tr>
+            <tr>
+                <th>53</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/saudi-arabia/squad" >
+                    Saudi Arabia</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Saudi-Arabia.png>
+                </th>
+            </tr>
+            <tr>
+                <th>61</th>
+                <th><li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/teams/ghana/squad" >
+                    Ghana</a></li></th>
+                <th>
+                    <img class="flags" src = https://www.countries-ofthe-world.com/flags-normal/flag-of-Ghana.png>
+                </th>
+            </tr>
+        </table>
     </body>
 </html>
